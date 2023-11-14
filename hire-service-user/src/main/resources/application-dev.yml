@@ -7,3 +7,8 @@ server:
 spring:
   banner:
     location: banner/banner.txt
+
+
+logging:
+  level:
+    root: info
