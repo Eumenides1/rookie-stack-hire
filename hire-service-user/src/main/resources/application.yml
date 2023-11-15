@@ -1,3 +1,14 @@
 spring:
   profiles:
     active: dev
+
+logging:
+  level:
+    root: info
+
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/*.xml
+  global-config:
+    db-config:
+      id-type: assign_id
+    banner: false

@@ -1,5 +1,7 @@
 package com.rookie.stack.user.controller;
 
+import com.rookie.stack.common.grace.result.GraceJSONResult;
+import com.rookie.stack.common.grace.result.ResponseStatusEnum;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,7 +12,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public Object hello() {
-        return "Hello User Service!";
+        return new GraceJSONResult(ResponseStatusEnum.SUCCESS, "Hello World!");
     }
 
 
